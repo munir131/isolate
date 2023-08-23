@@ -1,2 +1,10 @@
-- Examine the use of taskstats for measuring memory
 - Make --inherit-fds accept a list of fd's to inherit
+
+- use /etc/subuid for the UID range
+- but still allow to configure maximum number of sandboxes
+  less than the size of the range, so that CPU / node
+  restrictions cannot be bypassed
+
+- check that /proc/sys/core_pattern does not contain a pipe
+
+- reference the grader security paper
